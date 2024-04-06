@@ -1,4 +1,4 @@
-# run.sh - This is script is the first invoked when I build the output site
+# main-dx.skd - Outputs the main page of the Communion ritual
 # Copyright (C) 2024  Sophia Elizabeth Shapira
 #
 # This program is free software; you can redistribute it and/or modify
@@ -15,27 +15,18 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-ACTIVFROM=`pwd`
-export ACTIVFROM
 
-cd "$(dirname "${0}")" || exit
+:-:<html>
+:-:<head>
+:-:<link rel="stylesheet" href="primaria.css" />
+:-:<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-LTG_LANG_PROC=liturgscr
-export LTG_LANG_PROC
-
-cp out/primaria.css .
-rm -rf out
-mkdir out
-cp primaria.css out/.
+:**:<title>Secular Communion:
+:-:</title>
+:-:<meta property="og:title" content="Secular Communion" />
+:-:</head><body>
 
 
-X_OUTPUT="$(pwd)/out"
-X_SCRIP="$(pwd)/scrip"
-X_RES_BASE="$(pwd)"
-export X_OUTPUT
-export X_SCRIP
-export X_RES_BASE
 
-"${LTG_LANG_PROC}"-gener  -scf "${X_SCRIP}/main-dx.skd" > out/index.html
-
-
+:-:</body>
+:-:</html>
