@@ -36,6 +36,12 @@ export X_OUTPUT
 export X_SCRIP
 export X_RES_BASE
 
+X_DESTIN_DIR="$( cd out && pwd )"
+export X_DESTIN_DIR
+
+X_MODE_TYPE=stable
+export X_MODE_TYPE
+
 "${LTG_LANG_PROC}"-gener  -scf "${X_SCRIP}/main-dx.skd" > out/index.html
 
 
