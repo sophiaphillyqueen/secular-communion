@@ -80,6 +80,21 @@ $vari_maxo = 20;
 {
   my $lc_mode;
   $lc_mode = $ENV{'X_MODE_TYPE'};
+
+  {
+    my $lc2_cm;
+    my $lc2_ot;
+    
+    $lc2_cm = 'liturgscr-lookup';
+    $lc2_cm .= ' "${X_RES_BASE}/lcconf/resources.cnf"';
+    $lc2_cm .= ' main-tx-res';
+    $lc2_ot = `$lc2_cm`; chomp($lc2_ot);
+    if ( $lc2_ot eq '' )
+    {
+      die "You need to specify the main text resource.\n\n";
+    }
+    $ENV{'X_X_LANG_MAIN_TX'} = $lc2_ot;
+  }
   
   if ( $lc_mode eq 'stable' )
   {
@@ -175,6 +190,8 @@ while ( $vari_counto < ( $vari_maxo - 0.5 ) )
   #print STDERR "Doing Another Day: DEBUG:\n";
   
   system("liturgscr-gener -scf scrip/daily-main.skd -date " . $lc_tdate[0] . ' ' . $lc_tdate[1] . ' ' . $lc_tdate[2] . " > \${X_DESTIN_DIR}/pz-" . $lc_daycod . "-main.html");
+  
+  system("liturgscr-gener -scf scrip/daily-rta.skd -date " . $lc_tdate[0] . ' ' . $lc_tdate[1] . ' ' . $lc_tdate[2] . " > \${X_DESTIN_DIR}/pz-" . $lc_daycod . "-rta.html");
   
   #system("liturgscr-gener -scf scrip/daily-h03.skd -date " . $lc_tdate[0] . ' ' . $lc_tdate[1] . ' ' . $lc_tdate[2] . " > \${X_DESTIN_DIR}/pz-" . $lc_daycod . "-h03.html");
   

@@ -1,1 +1,87 @@
-:-:PAGES AGO
+# main-dx.skd - Outputs one day's main page of the Communion ritual
+# Copyright (C) 2024  Sophia Elizabeth Shapira
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/intro-text.skd:
+:subvload:intro-text:_a:
+
+:**:<html lang=":
+:env:X_X_LANG_CODE:
+:-:">
+:-:<head>
+:-:<link rel="stylesheet" href="primaria.css" />
+:-:<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+:**:<title>:
+:env:X_T_DAYOW_AB:
+:**:, :
+:env:X_T_NMONTH_AB:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:: Secular Communion:
+:-:</title>
+:-:<meta property="og:title" content="Secular Communion" />
+:-:</head><body>
+
+
+:-:<div class = "titlebox">
+:-:<div class = "bigtitle">
+:**:<a href = "index.html">Secular Communion:
+:-:</a>
+:-:</div>
+:-:<div class = "spgtitle">
+:env:X_T_DAYOW_FL:
+:**:, :
+:env:X_T_NMONTH_FL:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:
+:-:</div>
+:-:</div>
+
+
+:subload:dailynav:rclc/daily-navigation.skd:
+:set:_pgsf:-main:
+:subrun:dailynav:
+
+
+
+:-:<div class = "linksection">
+:-:<div class = "linkgroup">
+
+
+:-:<div class = "linkitem">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-rta.html">Main Communion Ritual</a>:
+:-:</div>
+
+:-:</div>
+:-:</div>
+
+
+
+
+
+
+
+:-:</body>
+:-:</html>

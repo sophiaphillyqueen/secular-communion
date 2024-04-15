@@ -42,6 +42,17 @@ export X_DESTIN_DIR
 X_MODE_TYPE=stable
 export X_MODE_TYPE
 
+X_X_LANG_MAIN_TX="$(liturgscr-lookup "${X_RES_BASE}/lcconf/resources.cnf" main-tx-res)"
+export X_X_LANG_MAIN_TX
+
+X_X_LANG_CODE="$(liturgscr-lookup "${X_X_LANG_MAIN_TX}/info.cnf" lang-code)"
+export X_X_LANG_CODE
+
+#echo ": ${X_X_LANG_MAIN_TX} : 4 :" sleep 2
+#echo ": ${X_X_LANG_MAIN_TX} : 3 :" sleep 2
+#echo ": ${X_X_LANG_MAIN_TX} : 2 :" sleep 2
+#echo ": ${X_X_LANG_MAIN_TX} : 1 :" sleep 2
+
 "${LTG_LANG_PROC}"-gener  -scf "${X_SCRIP}/main-dx.skd" > out/index.html
 
 

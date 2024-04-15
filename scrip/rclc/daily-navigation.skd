@@ -1,5 +1,5 @@
 
-# item-dx.sh - Section separation template
+# rclc/daily-navigation.skd - Displays the day-to-day navigation on any of a specific day's pages in the Hellenic Hours
 # Copyright (C) 2024  Sophia Elizabeth Shapira
 #
 # This program is free software; you can redistribute it and/or modify
@@ -16,19 +16,40 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-:-:<div class = "linkitem">
 
-:**:<a href = "pz-:
-:env:X_T_DAYCODE:s
-:**:-main.html">:
 
-:env:X_T_DAYOW_AB:
-:**:, :
-:env:X_T_NMONTH_AB:
-:**: :
-:env:X_T_DAYOM:
-:**:, :
-:env:X_T_YEAR:
-:-:</a>
+:-:<div class = "daily_nav">
+:-:<table class = "daily_nav"><tr>
 
+:if:envis:X_PRV_GO:yes:
+  ::-:BEFORE
+  :-:<td class = "nav_item">
+  :**:<a href = "pz-:
+  :env:X_PRV_DATE:
+  :lit:_pgsf:
+  :**:.html">To :
+  :env:X_PRV_MONTH:
+  :**: :
+  :env:X_PRV_DAYOM:
+  :-:</a>
+  :-:</td>
+:fi:
+:-:<td class = "nav_connect">
+:-:--
+:-:</td>
+:if:envis:X_NEX_GO:yes:
+  ::-:AFTER
+  :-:<td class = "nav_item">
+  :**:<a href = "pz-:
+  :env:X_NEX_DATE:
+  :lit:_pgsf:
+  :**:.html">To :
+  :env:X_NEX_MONTH:
+  :**: :
+  :env:X_NEX_DAYOM:
+  :-:</a>
+  :-:</td>
+:fi:
+
+:-:</tr></table>
 :-:</div>
