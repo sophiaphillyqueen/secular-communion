@@ -15,9 +15,9 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-:envset:_a:X_X_LANG_MAIN_TX:
-:addtx:_a:/intro-text.skd:
-:subvload:intro-text:_a:
+:::envset:_a:X_X_LANG_MAIN_TX:
+:::addtx:_a:/intro-text.skd:
+:::subvload:intro-text:_a:
 
 :**:<html lang=":
 :env:X_X_LANG_CODE:

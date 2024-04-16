@@ -15,13 +15,17 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-:envset:_a:X_X_LANG_MAIN_TX:
-:addtx:_a:/intro-text.skd:
-:subvload:intro-text:_a:
 
 :envset:tx_clb:X_RES_BASE:
 :addtx:tx_clb:/lcconf/prefs.cnf:
 :lookup:tx_clb:title-celebrant:
+
+:envset:tx_cng:X_RES_BASE:
+:addtx:tx_cng:/lcconf/prefs.cnf:
+:lookup:tx_cng:title-all:
+
+
+
 
 :**:<html lang=":
 :env:X_X_LANG_CODE:
@@ -35,7 +39,31 @@
 :-:<meta property="og:title" content="Secular Communion" />
 :-:</head><body>
 
-:subrun:intro-text:
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/commun-intro-text.skd:
+:subvload:txtres:_a:
+:subrun:txtres:
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/cosmology.skd:
+:subvload:txtres:_a:
+:subrun:txtres:
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/rational-gatha.skd:
+:subvload:txtres:_a:
+:subrun:txtres:
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/proclamation.skd:
+:subvload:txtres:_a:
+:subrun:txtres:
+
+:envset:_a:X_X_LANG_MAIN_TX:
+:addtx:_a:/commun-serve.skd:
+:subvload:txtres:_a:
+:subrun:txtres:
 
 
 :-:</body>

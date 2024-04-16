@@ -20,7 +20,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 :root {
 	--base-page-color: #000005;
 	--for-text-bg-color: #000000;
-	--for-instruct-bg-color: #ffffff;
+	--for-instruct-bg-color: #000000;
 	--for-instruct-tx-color: #ffcccc;
 	--for-most-tx-color: #ffff00;
 	--group-of-sect-color: #200000;
@@ -67,4 +67,75 @@ div.ltg_verbos_seg {
 	background-color: var(--group-of-sect-color);
 	text-align: center;
 	border-radius: 20px;
+}
+
+div.ltg_verbos_seg {
+	margin: 30px;
+	padding: 10px;
+	background-color: var(--group-of-sect-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.ltg_verbos_role {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	font-size: 180%;
+}
+
+div.ltg_verbos_say {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: var(--for-text-bg-color);
+	text-align: justify;
+	font-size: 150%;
+}
+
+div.ltg_verbos_chant {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: var(--for-text-bg-color);
+	text-align: justify;
+	font-size: 150%;
+}
+
+div.ltg_verbos_do {
+	margin: 10px;
+	padding: 10px;
+	padding-left: 20%;
+	border-radius: 20px;
+	color: var(--for-instruct-tx-color);
+	background-color: var(--for-instruct-bg-color);
+	text-align: right;
+	font-size: 150%;
+}
+
+div.versela {
+	padding-left: 40%;
+	text-indent: -66%;
+}
+
+div.verselb {
+	padding-left: 40%;
+	text-indent: -55%;
+}
+
+div.verselc {
+	padding-left: 40%;
+	text-indent: -44%;
+}
+
+div.verseld {
+	padding-left: 40%;
+	text-indent: -33%;
+}
+
+div.versele {
+	padding-left: 40%;
+	text-indent: -22%;
 }
