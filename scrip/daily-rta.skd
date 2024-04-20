@@ -40,6 +40,27 @@
 :-:</head><body>
 
 
+:-:<div class = "titlebox">
+:-:<div class = "bigtitle">
+:**:<a href = "../index.html">Secular Communion:
+:-:</a>
+:-:</div>
+:-:<div class = "spgtitle">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-main.html">:
+:env:X_T_DAYOW_FL:
+:**:, :
+:env:X_T_NMONTH_FL:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:</a>
+:-:</div>
+:-:</div>
+
+
 :envset:_a:X_X_LANG_MAIN_TX:
 :addtx:_a:/commun-intro-text.skd:
 :subvload:txtres:_a:

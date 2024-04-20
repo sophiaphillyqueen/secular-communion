@@ -40,7 +40,7 @@ body {
 }
 
 div.linksection {
-	margin: 30px;
+	margin: 10px;
 	padding: 10px;
 	background-color: var(--group-of-sect-color);
 	text-align: center;
@@ -58,11 +58,11 @@ div.linkitem {
 	background-color: var(--for-text-bg-color);
 	text-align: center;
 	border-radius: 20px;
-	font-size: 120%;
+	font-size: 150%;
 }
 
 div.ltg_verbos_seg {
-	margin: 30px;
+	margin: 10px;
 	padding: 10px;
 	background-color: var(--group-of-sect-color);
 	text-align: center;
@@ -70,7 +70,7 @@ div.ltg_verbos_seg {
 }
 
 div.ltg_verbos_seg {
-	margin: 30px;
+	margin: 10px;
 	padding: 10px;
 	background-color: var(--group-of-sect-color);
 	text-align: center;
@@ -118,6 +118,7 @@ div.ltg_verbos_do {
 div.versela {
 	padding-left: 40%;
 	text-indent: -66%;
+	text-align: left;
 }
 
 div.verselb {
@@ -139,3 +140,23 @@ div.versele {
 	padding-left: 40%;
 	text-indent: -22%;
 }
+
+div.titlebox {
+	margin: 10px;
+	padding: 10px;
+	border-width: 4px;
+	border-color: var(--group-of-sect-color);
+	background-color: var(--for-text-bg-color);
+	border-style: solid;
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.bigtitle {
+	font-size: 280%;
+}
+
+div.spgtitle {
+	font-size: 200%;
+}
+
