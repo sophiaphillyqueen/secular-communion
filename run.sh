@@ -23,6 +23,10 @@ cd "$(dirname "${0}")" || exit
 LTG_LANG_PROC=liturgscr
 export LTG_LANG_PROC
 
+
+mkdir -p lcinf
+perl scrip/special/primar.pl
+
 cp out/primaria.css .
 rm -rf out
 mkdir out
